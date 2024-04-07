@@ -2,6 +2,8 @@
   ansible.builtin.template:
     src: job.xml
     dest: /tmp/job.xml
+    remote_src: yes
+
 
 - name: Create a jenkins job 
   community.general.jenkins_job:
