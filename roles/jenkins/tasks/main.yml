@@ -2,7 +2,7 @@
   ansible.builtin.template:
     src: job.xml
     dest: /tmp/job.xml
-    remote_src: yes
+    delegate_to: localhost
 
 
 - name: Create a jenkins job 
