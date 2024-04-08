@@ -5,7 +5,7 @@
     url: http://172.31.94.184:8080
     user: admin
     password: admin123
-
+    enabled: true
   loop:
     - frontend
     - catalogue
