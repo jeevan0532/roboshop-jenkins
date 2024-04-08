@@ -6,8 +6,8 @@
     user: admin
     password: admin123
 
-    loop:
-      - frontend
-      - catalogue
-      - cart
+  loop:
+    - frontend
+    - catalogue
+    - cart
 
