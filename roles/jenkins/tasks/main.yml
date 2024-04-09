@@ -10,7 +10,6 @@
     url: http://44.201.85.251:8080
     user: admin
     password: admin123
-    enabled: true
   loop:
      - frontend
      - catalogue
