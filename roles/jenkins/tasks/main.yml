@@ -1,13 +1,19 @@
-- name: Create a jenkins job 
+- name: copy template
+  ansible.builtin.template:
+    src: job.xml
+    dest: /tmp/job.xml
+
+- name: Create a jenkins job
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/job.xml') }}"
-    name: test
-    url: http://172.31.94.184:8080
+    name: "{{item}}"
+    url: http://44.201.85.251:8080
     user: admin
     password: admin123
     enabled: true
   loop:
-    - frontend
-    - catalogue
-    - cart
+     - frontend
+     - catalogue
+     - cart
+
 
