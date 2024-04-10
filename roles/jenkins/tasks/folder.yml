@@ -6,7 +6,7 @@
 - name: Create a jenkins folder
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/folder.xml') }}"
-    name: "{{item.dir}}"
+    name: ci-pipeline
     url: http://44.201.85.251:8080
     user: admin
     password: admin123
