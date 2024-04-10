@@ -1,6 +1,7 @@
-- name: Apply tags to tasks within included file
+- name: create jobs
   ansible.builtin.include_tasks: pipeline.yml
   loop:
-    - frontend
+    - { name: "frontend", dir: "ci-piepline" }
+
      
 
