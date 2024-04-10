@@ -9,5 +9,5 @@
     name: "{{item.dir}}/{{item.name}}"
     url: http://44.201.85.251:8080
     user: admin
-    password: "{{jenkins_pass}}"
+    token: 113535f946a58b0bc6a6ed8fed0cf136db
 
