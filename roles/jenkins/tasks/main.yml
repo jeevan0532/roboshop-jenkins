@@ -1,10 +1,6 @@
-- name: include folder.yml file
-  ansible.builtin.import_tasks: folder.yml
-  loop:
-    - ci-pipeline
 - name: Apply tags to tasks within included file
   ansible.builtin.include_tasks: pipeline.yml
   loop:
-    - { name: "frontend", dir: "ci-pipeline" }
+    - frontend
      
 
