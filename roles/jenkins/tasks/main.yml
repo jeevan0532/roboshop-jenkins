@@ -5,13 +5,11 @@
     url: http://44.201.85.251:8080
     user: admin
     password: admin123
-  vars:
-    - folder
+  loop: "{{ folder }}"
 
 - name: create jobs
   ansible.builtin.include_tasks: pipeline.yml
-  vars:
-    - component
+  loop: "{{ jobs }}"
 
      
 
