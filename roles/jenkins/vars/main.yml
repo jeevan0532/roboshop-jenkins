@@ -1,0 +1,9 @@
+foldeer:
+  - ci-pipeline
+
+component:
+  - {name: "frontend", dir: "ci-pipeline" }
+  - {name: "cart", dir: "ci-pipeline" }
+  - {name: "catalogue", dir: "ci-pipeline" }
+  - {name: "payment", dir: "ci-pipeline" }
+
